@@ -37,3 +37,6 @@ data:
     url = "https://$HOSTIP:10250"
     bearer_token = "/run/secrets/kubernetes.io/serviceaccount/token"
     insecure_skip_verify = true
+
+    [[inputs.prometheus]]
+    monitor_kubernetes_pods = true
